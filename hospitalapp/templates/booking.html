@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">Book Your Appointment</h1><hr>
+<form action="" method="POST" class="mx-auto my-3 w-25">
+    {% csrf_token %}
+    {{form.as_p}}
+    <br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
